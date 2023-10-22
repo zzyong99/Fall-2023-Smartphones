@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		484CA7502AE48D6C009E49DE /* AddStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484CA74F2AE48D6C009E49DE /* AddStockViewController.swift */; };
+		484CA7532AE4935C009E49DE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484CA7522AE4935C009E49DE /* Constants.swift */; };
 		487CE8682AE4761E00974AC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CE8672AE4761E00974AC5 /* AppDelegate.swift */; };
 		487CE86A2AE4761E00974AC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CE8692AE4761E00974AC5 /* SceneDelegate.swift */; };
 		487CE86C2AE4761E00974AC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CE86B2AE4761E00974AC5 /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		1CBD9394DEFB3224EE7CF539 /* Pods-StockApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockApp.release.xcconfig"; path = "Target Support Files/Pods-StockApp/Pods-StockApp.release.xcconfig"; sourceTree = "<group>"; };
 		30596F8D7FF782F5F056FBA4 /* Pods-StockApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockApp.debug.xcconfig"; path = "Target Support Files/Pods-StockApp/Pods-StockApp.debug.xcconfig"; sourceTree = "<group>"; };
+		484CA74F2AE48D6C009E49DE /* AddStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStockViewController.swift; sourceTree = "<group>"; };
+		484CA7522AE4935C009E49DE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		487CE8642AE4761E00974AC5 /* StockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		487CE8672AE4761E00974AC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		487CE8692AE4761E00974AC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,8 +60,15 @@
 				30596F8D7FF782F5F056FBA4 /* Pods-StockApp.debug.xcconfig */,
 				1CBD9394DEFB3224EE7CF539 /* Pods-StockApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		484CA7512AE49333009E49DE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				484CA7522AE4935C009E49DE /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		487CE85B2AE4761E00974AC5 = {
@@ -81,6 +92,7 @@
 		487CE8662AE4761E00974AC5 /* StockApp */ = {
 			isa = PBXGroup;
 			children = (
+				484CA7512AE49333009E49DE /* Utils */,
 				487CE8672AE4761E00974AC5 /* AppDelegate.swift */,
 				487CE8692AE4761E00974AC5 /* SceneDelegate.swift */,
 				487CE86B2AE4761E00974AC5 /* ViewController.swift */,
@@ -88,6 +100,7 @@
 				487CE8702AE4762000974AC5 /* Assets.xcassets */,
 				487CE8722AE4762000974AC5 /* LaunchScreen.storyboard */,
 				487CE8752AE4762000974AC5 /* Info.plist */,
+				484CA74F2AE48D6C009E49DE /* AddStockViewController.swift */,
 			);
 			path = StockApp;
 			sourceTree = "<group>";
@@ -207,9 +220,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				484CA7532AE4935C009E49DE /* Constants.swift in Sources */,
 				487CE86C2AE4761E00974AC5 /* ViewController.swift in Sources */,
 				487CE8682AE4761E00974AC5 /* AppDelegate.swift in Sources */,
 				487CE86A2AE4761E00974AC5 /* SceneDelegate.swift in Sources */,
+				484CA7502AE48D6C009E49DE /* AddStockViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
