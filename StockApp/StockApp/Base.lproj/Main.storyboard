@@ -59,7 +59,7 @@
             </objects>
             <point key="canvasLocation" x="959.5419847328244" y="-27.464788732394368"/>
         </scene>
-        <!--Add Stock View Controller-->
+        <!--Add Stock-->
         <scene sceneID="sWZ-vd-7oX">
             <objects>
                 <viewController id="cG4-1Z-4bu" customClass="AddStockViewController" customModule="StockApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -96,7 +96,7 @@
                             <constraint firstItem="7Sh-00-NLz" firstAttribute="trailing" secondItem="t7f-do-aur" secondAttribute="trailing" constant="40" id="tw4-aU-pH6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="9Tf-qT-lJM"/>
+                    <navigationItem key="navigationItem" title="Add Stock" id="9Tf-qT-lJM"/>
                     <connections>
                         <outlet property="txtStock" destination="jye-W8-184" id="ohg-ez-ASC"/>
                     </connections>
