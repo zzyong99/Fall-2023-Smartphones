@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		484CA7502AE48D6C009E49DE /* AddStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484CA74F2AE48D6C009E49DE /* AddStockViewController.swift */; };
 		484CA7532AE4935C009E49DE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484CA7522AE4935C009E49DE /* Constants.swift */; };
+		4850C25E2AF6F83100B95BB0 /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4850C25C2AF6F83100B95BB0 /* StockTableViewCell.swift */; };
+		4850C25F2AF6F83100B95BB0 /* StockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4850C25D2AF6F83100B95BB0 /* StockTableViewCell.xib */; };
 		486A7AB22AEDB60D00A6C7F0 /* StockClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486A7AB12AEDB60D00A6C7F0 /* StockClass.swift */; };
 		486A7AB82AEDCE4300A6C7F0 /* StockAppNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486A7AB72AEDCE4300A6C7F0 /* StockAppNetwork.swift */; };
 		486A7ABA2AEDD4CC00A6C7F0 /* SimpleStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486A7AB92AEDD4CC00A6C7F0 /* SimpleStock.swift */; };
@@ -26,6 +28,8 @@
 		30596F8D7FF782F5F056FBA4 /* Pods-StockApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockApp.debug.xcconfig"; path = "Target Support Files/Pods-StockApp/Pods-StockApp.debug.xcconfig"; sourceTree = "<group>"; };
 		484CA74F2AE48D6C009E49DE /* AddStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddStockViewController.swift; path = ../AddStockViewController.swift; sourceTree = "<group>"; };
 		484CA7522AE4935C009E49DE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4850C25C2AF6F83100B95BB0 /* StockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
+		4850C25D2AF6F83100B95BB0 /* StockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockTableViewCell.xib; sourceTree = "<group>"; };
 		486A7AB12AEDB60D00A6C7F0 /* StockClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockClass.swift; sourceTree = "<group>"; };
 		486A7AB72AEDCE4300A6C7F0 /* StockAppNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockAppNetwork.swift; sourceTree = "<group>"; };
 		486A7AB92AEDD4CC00A6C7F0 /* SimpleStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStock.swift; sourceTree = "<group>"; };
@@ -77,6 +81,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		4850C25B2AF6F7E200B95BB0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4850C25C2AF6F83100B95BB0 /* StockTableViewCell.swift */,
+				4850C25D2AF6F83100B95BB0 /* StockTableViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		486A7AB32AEDCC7C00A6C7F0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +130,7 @@
 		487CE8662AE4761E00974AC5 /* StockApp */ = {
 			isa = PBXGroup;
 			children = (
+				4850C25B2AF6F7E200B95BB0 /* view */,
 				486A7AB62AEDCC9400A6C7F0 /* Model */,
 				486A7AB32AEDCC7C00A6C7F0 /* Controller */,
 				484CA7512AE49333009E49DE /* Utils */,
@@ -192,6 +206,7 @@
 			files = (
 				487CE8742AE4762000974AC5 /* LaunchScreen.storyboard in Resources */,
 				487CE8712AE4762000974AC5 /* Assets.xcassets in Resources */,
+				4850C25F2AF6F83100B95BB0 /* StockTableViewCell.xib in Resources */,
 				487CE86F2AE4761E00974AC5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +264,7 @@
 				487CE86C2AE4761E00974AC5 /* ViewController.swift in Sources */,
 				486A7ABA2AEDD4CC00A6C7F0 /* SimpleStock.swift in Sources */,
 				487CE8682AE4761E00974AC5 /* AppDelegate.swift in Sources */,
+				4850C25E2AF6F83100B95BB0 /* StockTableViewCell.swift in Sources */,
 				487CE86A2AE4761E00974AC5 /* SceneDelegate.swift in Sources */,
 				484CA7502AE48D6C009E49DE /* AddStockViewController.swift in Sources */,
 				486A7AB22AEDB60D00A6C7F0 /* StockClass.swift in Sources */,

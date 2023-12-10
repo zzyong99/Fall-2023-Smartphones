@@ -32,9 +32,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 
             }
             //tblView.reloadData()
-            
+            mySimpleStock = [SimpleStock]()
             getAllSimpleStock(symbols: stockSymbols).done{ stockQuotes in
                 for stockQuote in stockQuotes {
+                    let quoteSimpleStock = SimpleStock()
+                    quoteSimpleStock.symbol = stockQuote.symbol
+                    quoteSimpleStock.price = stockQuote.price
+                    self.mySimpleStock.append(quoteSimpleStock)
                     print("\(stockQuote.symbol) : \(stockQuote.price)")
                 }
                 self.tblView.reloadData()
@@ -76,6 +80,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         do {
             let realm = try Realm()
             try realm.write({
+                let predicate = 
                 realm.delete(stock)
             })
         } catch {

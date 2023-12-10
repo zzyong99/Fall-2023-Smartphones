@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Xx-lZ-2gg">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contact-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Final_ProtocolDelegate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ypc-lu-vOP">
+                                <rect key="frame" x="5" y="108" width="383" height="705"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Ebs-sc-BMN">
+                                        <rect key="frame" x="0.0" y="50" width="383" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ebs-sc-BMN" id="ASv-kc-pDT">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="5qs-yK-qKk"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="CaC-sJ-RY4"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ypc-lu-vOP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="7fP-1Z-3aM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ypc-lu-vOP" secondAttribute="bottom" constant="5" id="Uwj-ez-DKz"/>
+                            <constraint firstItem="Ypc-lu-vOP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="dHZ-Aq-nah"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ypc-lu-vOP" secondAttribute="trailing" constant="5" id="lvC-Ir-67G"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contact" id="xG8-Mt-38l">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="hOS-fs-scp">
+                            <connections>
+                                <action selector="addNewContact:" destination="BYZ-38-t0r" id="ncr-a6-iT3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tblView" destination="Ypc-lu-vOP" id="mZP-Fw-UWU"/>
+                        <segue destination="q30-UY-DvD" kind="show" identifier="SegueShow" id="UQ5-5o-b1y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057.2519083969464" y="-27.464788732394368"/>
+        </scene>
+        <!--Add Contact View Controller-->
+        <scene sceneID="qRX-Za-7mT">
+            <objects>
+                <viewController id="q30-UY-DvD" customClass="AddContactViewController" customModule="Final_ProtocolDelegate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8dh-Gf-wOp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="enm-5a-8MS">
+                                <rect key="frame" x="10" y="409" width="373" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yOj-2o-UQt">
+                                <rect key="frame" x="10" y="345" width="373" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6MK-Ly-edX">
+                                <rect key="frame" x="10" y="473" width="373" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="saveNewContact:" destination="q30-UY-DvD" eventType="touchUpInside" id="WDa-YM-wVZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AeU-8U-wBf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AeU-8U-wBf" firstAttribute="trailing" secondItem="enm-5a-8MS" secondAttribute="trailing" constant="10" id="3ky-OR-zbw"/>
+                            <constraint firstItem="6MK-Ly-edX" firstAttribute="top" secondItem="enm-5a-8MS" secondAttribute="bottom" constant="30" id="CUi-Ak-0mG"/>
+                            <constraint firstItem="enm-5a-8MS" firstAttribute="centerY" secondItem="8dh-Gf-wOp" secondAttribute="centerY" id="CZW-oS-duQ"/>
+                            <constraint firstItem="AeU-8U-wBf" firstAttribute="trailing" secondItem="yOj-2o-UQt" secondAttribute="trailing" constant="10" id="Pl4-lr-VGc"/>
+                            <constraint firstItem="6MK-Ly-edX" firstAttribute="leading" secondItem="AeU-8U-wBf" secondAttribute="leading" constant="10" id="R1x-qX-ltt"/>
+                            <constraint firstItem="yOj-2o-UQt" firstAttribute="leading" secondItem="AeU-8U-wBf" secondAttribute="leading" constant="10" id="beC-kT-nGt"/>
+                            <constraint firstItem="enm-5a-8MS" firstAttribute="leading" secondItem="AeU-8U-wBf" secondAttribute="leading" constant="10" id="fYF-Rw-LKr"/>
+                            <constraint firstItem="enm-5a-8MS" firstAttribute="top" secondItem="yOj-2o-UQt" secondAttribute="bottom" constant="30" id="hdu-WJ-W2V"/>
+                            <constraint firstItem="enm-5a-8MS" firstAttribute="centerX" secondItem="8dh-Gf-wOp" secondAttribute="centerX" id="jM3-wY-Pry"/>
+                            <constraint firstItem="AeU-8U-wBf" firstAttribute="trailing" secondItem="6MK-Ly-edX" secondAttribute="trailing" constant="10" id="px2-L2-k5d"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ARh-Ux-Wba"/>
+                    <connections>
+                        <outlet property="nameField" destination="yOj-2o-UQt" id="3aH-Pq-EAG"/>
+                        <outlet property="numberField" destination="enm-5a-8MS" id="QSB-4y-ZGE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a9m-Au-5Hk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1863" y="-15"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ukX-N4-DkD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Xx-lZ-2gg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="A5W-dM-DTW">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TlO-vB-3GV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZeQ-gh-mJm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
